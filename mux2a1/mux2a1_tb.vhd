@@ -2,10 +2,10 @@
 library IEEE;
 use ieee.std_logic_1164.all;
 
-entity testbench is
+entity mux2a1_tb is
 end entity;
 
-architecture prueba of testbench is
+architecture prueba of mux2a1_tb is
 
 component mux2a1 is
 	port
