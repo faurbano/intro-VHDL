@@ -22,7 +22,7 @@ architecture concurrente of mux4a1 is
 begin
    with sel select
       Yout <= W when "00",
-		        X when "01",
-				  Y when "10",
-				  Z when others;
+		          X when "01",
+				      Y when "10",
+				      Z when others;
 end concurrente;
