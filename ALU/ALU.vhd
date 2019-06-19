@@ -23,7 +23,7 @@ entity ALU is
 	port
 	(
 		-- Pines de Entrada
-		A,B		: in  std_logic_vector(3 downto 0);
+		A,B      : in  std_logic_vector(3 downto 0);
 		
 		opcode   : in  std_logic_vector(2 downto 0);
 		
