@@ -10,7 +10,7 @@ entity compuertas is
 	port
 	(
 		-- Pines Entrada
-		A,B	: in  std_logic;
+		A,B: in  std_logic;
 
 		-- Pines de Salida
 		Yand, Yor, Ynot	: out std_logic
