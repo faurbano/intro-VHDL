@@ -40,13 +40,13 @@ begin
     with opcode(2 downto 0) select
 		Y_tmp <=  ('0' & A) when "000",
 		          ('0' & B) when "001",
-					 ('0' & A) and ('0' & B) when "010", 
-					 ('0' & A) or  ('0' & B) when "011", 
+			  ('0' & A) and ('0' & B) when "010", 
+			  ('0' & A) or  ('0' & B) when "011", 
 	--Operaciones Aritméticas
-	             ('0' & A) + B   when "100",
+	                  ('0' & A) + B   when "100",
 		          ('0' & A) + '1' when "101",
-					 ('0' & A) - '1' when "110", 
-					 ('0' & A) - B   when others;
+			  ('0' & A) - '1' when "110", 
+			  ('0' & A) - B   when others;
  
  Cout <= Y_tmp(4);
  Yout <= Y_tmp(3 downto 0);
